@@ -1,0 +1,22 @@
+@echo off
+title [Favorite Websites]
+@echo off
+title Favorite Websites
+color 0F
+if "%1" neq "" ( goto %1)
+:Menu
+cls
+Echo Welcome to your favorite websites!
+echo 1. Google
+echo 2. Youtube
+echo 3. Gmail
+echo 4. I see you 
+echo 5. Calcuator
+set /p answer=Enter the number to select your Favorite Websites!
+if %answer%==1 start https://www.google.com/ pause goto Menu
+if %answer%==2 start https://www.youtube.com/ pause goto Menu
+if %answer%==3 start https://mail.google.com/mail/u/0/#inbox pause goto Menu
+if %answer%==4 start microsoft.windows.camera: screenshot-cmd 
+if %answer%==5 start calc
+goto Menu
+pause>nul\set/p = 
